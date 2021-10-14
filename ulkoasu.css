@@ -1,0 +1,65 @@
+
+.body {
+    background-color: aquamarine;
+    color: black;
+    margin: 0px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns:  20% 50% 30%;
+    grid-template-rows: 20vh 60vh 20vh;
+
+}
+
+.header {
+    display: grid;
+    background-color: cadetblue;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    text-align: center;
+}
+
+.header p {
+    color: darkblue;
+    font-family: 'Andada', serif;
+    grid-column: 1 / span 4;
+    font-size: 5em;
+}
+
+.header img {
+    height: 100px;
+    justify-content:left;
+}
+
+.content {
+    display: grid;
+    background-color: aquamarine;
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 3;
+}
+
+.content p {
+    color:black;
+    font-family: 'Andada', serif;
+    font-size: 1em;
+    grid-column: 1;
+    align-items: left;
+    justify-content: left;
+}
+
+.form {
+    background-color: aquamarine;
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 3;
+}
+
+input {
+    
+}
+
+
+
+
