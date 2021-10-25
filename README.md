@@ -10,7 +10,7 @@ Minkä hyödyn sivusto tuottaa kohderyhmälle?
 
 Kuvaa miten testasit sivuston toimivuuden?
 - Responsiivisuutta testasin chromen toiminnolla, jolla voi tarkastella mobiilinäkymää
-- Lisäksi käytin validaattoreita 
+- Lisäksi käytin validaattoreita datan validoimiseksi (html, css, js -validoinnit)
 
 Mitä vaikeuksia kohtasit ja miten niistä selvisit?
 - Huomasin, että paljon oli jo oppitunneilta unohtanut, joten meni paljolti googletteluksi mutta onneksi sieltä löytyy hyvin apuja
