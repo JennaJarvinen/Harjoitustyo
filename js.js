@@ -41,7 +41,7 @@ document.getElementById('määrä-button').onclick = function () {
     var tulosValue = getPriceByArea(selectedAreaValue);
     var discountInEuros = tulosValue * discount / 100;
 
-    var priceAfterDiscount = tulosValue * discountInEuros;
+    var priceAfterDiscount = tulosValue - discountInEuros;
    
     tulosLabel.innerHTML = priceAfterDiscount;
 
