@@ -30,7 +30,7 @@ document.body.addEventListener('click', function (event) {
     }
 
     if (selectedAreaValue != '' && discount != 0) {
-        document.getElementById('määrä-button').disabled = false
+        document.getElementById('määrä-button').disabled = false;
     }
 });
 
@@ -49,16 +49,12 @@ function getPriceByArea(area) {
     switch (area) {
         case 'Seittu':
             return 1890;
-            break;
         case 'Ujaistenkylä':
             return 2050;
-            break;
         case 'Asema':
             return 1600;
-            break;
         case 'Keskusta':
             return 1550;
-            break;
         default:
     }
 }
@@ -69,16 +65,12 @@ function getDiscountPercentageByType(type) {
     switch (type) {
         case 'Asuinkiinteistö':
             return 60;
-            break;
         case 'Vapaa-ajan kiinteistö':
             return 5;
-            break;
         case 'Maatalous':
             return 20;
-            break;
         case 'Yritys':
             return 30;
-            break;
         default:
     }
 

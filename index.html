@@ -4,177 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kohti valokuitua!</title>
+    <link rel="stylesheet" href="css.css">
     <script src="js.js" defer></script>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .flex-container-form {
-            display: flex;
-            flex-direction: row;
-            font-size: 14px;
-            text-align: center;
-        }
-
-        .header {
-            text-align: center;
-            background-color: #2a3744;
-            color: white;
-        }
-
-        .footer {
-            text-align: center;
-            background-color: #2a3744;
-            color: white;
-        }
-
-        h1 {
-            grid-column: 1 / span 4;
-            font-size: 3.2em;
-        }
-
-        .flex-item-left {
-            padding: 10px;
-            flex: 65%;
-        }
-
-        .flex-item-right {
-            padding: 10px;
-            flex: 35%;
-        }
-
-        .flex-item-form-left {
-            padding: 10px;
-            flex: 50%;
-        }
-
-        .flex-item-form-right {
-            padding: 10px;
-            flex: 50%;
-        }
-
-        .form-top {
-            padding: 10px;
-            flex: 100%;
-            text-align: center;
-        }
-
-
-        .form-middle {
-            padding: 10px;
-            flex: 100%;
-            text-align: center;
-        }
-
-        .form-bottom {
-            padding: 10px;
-            flex: 100%;
-            text-align: center;
-        }
-
-        p {
-            color: black;
-
-            font-size: 0.7em;
-
-            text-align: left;
-        }
-
-        button.green-wide {
-            background-color: #4CAF50;
-
-        }
-
-        button {
-            background-color: #2a3744;
-            border: none;
-            color: white;
-            padding: 4px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            margin: 8px 2px;
-            cursor: pointer;
-            border-radius: 12px;
-            Width: 300px;
-
-        }
-
-        button:disabled {
-            cursor: not-allowed;
-            pointer-events: all !important;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-
-
-        .content {
-            max-width: 1200px;
-            margin: auto;
-
-        }
-
-        button:disabled,
-        button[disabled] {
-            border: 1px solid #999999;
-            background-color: #cccccc;
-            color: #666666;
-
-
-        }
-
-        /* Responsive layout - makes a one column-layout instead of two-column layout */
-        @media screen and (max-width: 700px) {
-            .flex-container {
-                flex-direction: column;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .flex-container-form {
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -182,33 +13,29 @@
         <h1>Valokuitu Munakkaan</h1>
     </div>
     <div class="content">
-
-
         <div class="flex-container">
             <div class="flex-item-left">
                 <h2> Miksi valokuitua meidän kylälle?</h2>
-                <p>Valokuituyhteys on tiedonsiirtokyvyltään ylivoimainen ja päihittää nopeudessaan selvästi
-                    kuparikaapelin
-                    ja langattomat yhteydet. Parhaimmillaan kaikki maailman tietoliikenne mahtuisi kulkemaan yhdessä
-                    ainoassa valokuidussa.
+                <h3> Toimiva yhteys on jokaisen oikeus</h3>
+                <p>Valokuituliittymä on jokaisen kodin perusliittymä, nyt ja tulevaisuudessa yhtä tärkeä kuin sähkö-, vesi- ja viemäriliittymät. Nykypäivän perusinfraa.
+                    Valokuituliittymä mahdollistaa tavanomaisten nettiyhteyksien lisäksi TV- ja viihdepalvelut sekä myös uudet tulevaisuudessa kehitettävät palvelut.
                 </p>
                 <P>
-                    Kyllästyttääkö ainainen pätkiminen striimatessasi suosikkisarjaasi? Valokuitu tarjoaa häiriötöntä
-                    toimintavarmuutta. Yhteyden laatuun ei vaikuta esimerkiksi yhtäaikaisten käyttäjien määrä,
-                    sääolosuhteet
-                    tai etäisyys.
-                </P>
+                    Munakan Kyläkuitu tuo valokuituyhteyden kotiisi saakka hinnan pysyessä kaikille samana – etäisyyksistä riippumatta. 
+                    Valokuitu on ainut keino varmistaa, että myös harvaan asutuilla maaseutualueilla pysytään tietoyhteiskunnan kehityksessä mukana.
+                    Mikäli haluat olla omalta osaltasi edesauttamassa maaseudun tulevaisuutta, ota yhteyttä Kyläkuituun niin katsotaan yhdessä miten voimme toteuttaa yhteytesi.
+                </p>
+                <p>Munakan Kyläkuitu, ota yhteyttä: <br>puhelimitse: Matti Meikäläinen p. 0401234567 <br>sähköpostitse: info@munakka.fi </p>
+                <p>Oheisella laskurilla voit laskea mitä Kyläkuituun liittyminen tarkoittasi sinun osaltasi.</p>
             </div>
             <div class="flex-item-right">
-                <img width="300" src="valokuitukuva.jpg" alt="Valokuitua rakennetaan">
+                <img width="500" src="valokuitukuva.jpg" alt="Valokuitua rakennetaan">
             </div>
         </div>
         <form>
             <div class="form-top">
-
             </div>
             <div class="flex-container-form">
-
                 <div class="flex-item-form-left">
                     <div>
                         <h2>Laske liittymän hinta</h2>
@@ -235,29 +62,22 @@
                             <button class="green-wide" type="button" disabled id="määrä-button">Laske hintani</button>
                             <br>
                     </div>
-
                 </div>
-
                 <div class="flex-item-form-right">
                     <h4>Alue</h4>
-                    <h1 id="selectedAreaLabel"></h1>
+                    <h1 id="selectedAreaLabel">-</h1>
                     <h4>Valtion tuki</h4>
-                    <h1 id="discountPercentageLabel">Valokuitu</h1>
+                    <h1 id="discountPercentageLabel">-</h1>
                     <h4>Valokuitu liittymäsi hinnaksi tulee</h4>
-                    <h1 id="tulos"></h1>
+                    <h1 id="tulos">-</h1>
                 </div>
-
             </div>
             <div class="form-bottom">
-
-
             </div>
         </form>
     </div>
     <div class="footer">
-        <h5>Munakan kyläyhdistys 2021</h5>
+        <h5>Munakan kyläyhdistys 2021 <br> info@munakka.fi </h5>
     </div>
-
 </body>
-
 </html>

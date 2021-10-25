@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+}
+
+.flex-container-form {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    background-color: #2a3744;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    background-color: #2a3744;
+    color: white;
+}
+
+h1 {
+    grid-column: 1 / span 4;
+    font-size: 3.2em;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 65%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 35%;
+}
+
+.flex-item-form-left {
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-form-right {
+    padding: 10px;
+    flex: 50%;
+}
+
+.form-top {
+    padding: 10px;
+    flex: 100%;
+    text-align: center;
+}
+
+.form-middle {
+    padding: 10px;
+    flex: 100%;
+    text-align: center;
+}
+
+.form-bottom {
+    padding: 10px;
+    flex: 100%;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+button.green-wide {
+    background-color: #4CAF50;
+}
+
+button {
+    background-color: #2a3744;
+    border: none;
+    color: white;
+    padding: 4px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    Width: 300px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media screen and (max-width: 700px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container-form {
+        flex-direction: column;
+    }
+}
