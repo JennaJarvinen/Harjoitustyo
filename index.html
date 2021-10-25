@@ -10,7 +10,7 @@
 
 <body>
     <div class="header">
-        <h1>Valokuitu Munakkaan</h1>
+        <h1 class="main-header">Valokuitu Munakkaan</h1>
     </div>
     <div class="content">
         <div class="flex-container">
@@ -63,13 +63,17 @@
                             <br>
                     </div>
                 </div>
-                <div class="flex-item-form-right">
-                    <h4>Alue</h4>
-                    <h1 id="selectedAreaLabel">-</h1>
-                    <h4>Valtion tuki</h4>
-                    <h1 id="discountPercentageLabel">-</h1>
-                    <h4>Valokuitu liittymäsi hinnaksi tulee</h4>
-                    <h1 id="tulos">-</h1>
+                <div class="flex-item-form-right text-center">
+                    <div class="calculator-display">
+                    <h4 class="calculator-display">Alue</h4>
+                    <h1 class="hidden calculator-display" id="selectedAreaLabel">-</h1>
+
+                    <h4 class="calculator-display">Valtion tuki</h4>
+                    <h1 class="hidden calculator-display" id="discountPercentageLabel">-</h1>
+
+                    <h4 class="calculator-display">Valokuitu liittymäsi hinnaksi tulee</h4>
+                    <h1 class="hidden calculator-display" id="tulos">-</h1>
+                </div>
                 </div>
             </div>
             <div class="form-bottom">

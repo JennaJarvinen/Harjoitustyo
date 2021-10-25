@@ -16,8 +16,9 @@ document.body.addEventListener('click', function (event) {
         var selectedAreaLabel = document.getElementById('selectedAreaLabel');
         selectedAreaLabel.innerHTML = selectedAreaValue;
 
-
+        hideLabelIfEmpty(selectedAreaLabel, selectedAreaValue);  
     }
+
     else if (typeSelectionDropDownBtn.contains(event.target)) {
         tulosLabel.innerHTML = '';
         
@@ -27,6 +28,8 @@ document.body.addEventListener('click', function (event) {
         discount = getDiscountPercentageByType(selectedValue);
         var selectedTypeLabel = document.getElementById('discountPercentageLabel');
         selectedTypeLabel.innerHTML = discount + ' %';
+
+        hideLabelIfEmpty(selectedTypeLabel, selectedValue);
     }
 
     if (selectedAreaValue != '' && discount != 0) {
@@ -36,10 +39,13 @@ document.body.addEventListener('click', function (event) {
 
 document.getElementById('määrä-button').onclick = function () {
     var tulosValue = getPriceByArea(selectedAreaValue);
+    var discountInEuros = tulosValue * discount / 100;
 
-    var priceAfterDiscount = tulosValue * discount / 100; 
+    var priceAfterDiscount = tulosValue * discountInEuros;
    
     tulosLabel.innerHTML = priceAfterDiscount;
+
+    hideLabelIfEmpty(tulosLabel, priceAfterDiscount);
 };
 
 
@@ -73,6 +79,12 @@ function getDiscountPercentageByType(type) {
             return 30;
         default:
     }
+}
+function hideLabelIfEmpty(label, val) {
 
+    if (val != "")
+        label.style.visibility = "visible";
+    else
+        label.style.visibility = "hidden";
 }
 
